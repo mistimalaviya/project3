@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+    <style>
+         .s1{
+            text-align: center;
+            margin-top: 100px;
+            /* position: absolute; */
+        }
+        div{
+            padding: 22px;
+            box-shadow: 0 0 10px 0 #FF6969;
+            width: 500px;
+            background-color: #C80036;
+            margin-top: 10%;
+            height: 300px;
+            border-radius: 30px;
+            color: white;
+        }
+        button{
+          width: 100px;
+          background-color: #FF6969;
+          height: 40px;
+            border-radius: 20px;
+            color: white;
+            
+      }
+
+      button:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+        #pos{
+            font-size: 20px;
+        }
+        #minu{
+            height: 25px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="s1">Q5..Write a function that computes the factorial of a given positive integer using a loop.<h1>
+    <center>
+        <div>
+           
+       <br><br>
+    <label for=""id="minu">Enter number</label>
+    <input type="text" id="misu">
+    <br><br>
+    <button onclick="findFactorial()">click</button>
+    <h4 id="text"></h4>
+</div>
+    </center>    
+    
+    <script>
+        function findFactorial() {
+        let positive=document.getElementById("misu").value
+    let fat = 1;
+    for (x = 1; x <= positive; x++) {
+      fat *= x;
+  }
+      document.getElementById("text").innerHTML=`ans = ${fat}`
+  }
+  
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <style>
+        .s1{
+            text-align: center;
+            margin-top: 100px;
+            /* position: absolute; */
+        }
+        div{
+            padding: 20px;
+            box-shadow: 0 0 20px 0 grey; 
+            width: 500px;
+            background-color: black;
+            margin-top: 10%;
+            height: 300px;
+            border-radius: 30px;
+            color: white;
+            
+        }
+        button{
+            width: 150px;
+            background-color: white;
+            border-radius: 20px;
+            height: 40px;
+        }
+        button:hover{
+           background-color: grey;
+           color: black;
+        }
+        #cv{
+            font-size: 30px;
+
+            /* position: absolute; */
+            /* margin-top: 20px; */
+        }
+        #num{
+            height: 30px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="s1">Q1..Write a function that takes a positive integer as input and returns the sum of its digits.</h1>
+    <center>
+        <div>
+            <br><br><br>
+   
+    <label for="" id="cv">Enter the number :</label>
+    <input type="text" id="num">
+    <br><br><br><br><br>
+    <button onclick="data()">click</button>
+    <h4 id="text"></h4>
+</div>
+</center>
+
+    <script>
+        function data() {
+        let num = document.getElementById("num").value;
+        let sum=0
+        for (let x = 0; x <= num.length-1; x++) {
+
+          sum += +num[x];  
+        }
+        document.getElementById("text").innerHTML=`ans= ${sum}`
+   
+
+    }
+    </script>
+</body>
+</html>

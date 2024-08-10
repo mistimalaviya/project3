@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q3</title>
+    <style>
+            .s1{
+            text-align: center;
+            margin-top: 100px;
+            /* position: absolute; */
+        }
+      div{
+          padding: 20px;
+          box-shadow: 10px 0 10px 0 #939185;
+          width: 500px;
+          background-color: #2F3645;
+          margin-top: 10%;
+          height: 300px;
+            border-radius: 30px;
+            color: white;
+      }
+      button{
+          width: 100px;
+          background-color: rgb(213, 236, 247);
+          height: 40px;
+            border-radius: 20px;
+            color: white;
+            
+      }
+
+      button:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+        #minu{
+            font-size: 30px;
+        }
+        #data{
+            height: 25px;
+            border-radius: 20px;
+        }
+  </style>
+  </head>
+  <body>
+    <h1 class="s1">Q3..Write a function that counts the number of consonants in a given string.<h1>
+    <center>
+      <div>
+       <BR><BR>
+      <label for="" id="minu">Enter string :</label>
+      <input type="text" id="data" />
+      <br><br>
+      <button onclick="fun()">click</button>
+      <h4 id="text"></h4>
+    </div>
+    </center>
+
+    <script>
+      function fun() {
+        let name = document.getElementById("data").value;
+        let count = 0;
+        for (x = 0; x <= name.length  ; x++) {
+          let char=name[x]
+          if (char >= "a" && char <= "z" && char !== "a" && char !== "e" && char !== "i" && char !== "o" && char !== "u") {
+            count++;
+          }
+          document.getElementById("text").innerHTML = `${count}  a consonants`;
+        }
+      
+      }
+    </script>
+  </body>
+</html>
+</html>

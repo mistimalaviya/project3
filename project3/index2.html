@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <style>
+                .s1{
+            text-align: center;
+            margin-top: 100px;
+            /* position: absolute; */
+        }
+        div{
+            padding: 20px;
+            box-shadow: 20px 0 20px 0 #677D6A;
+            width: 500px;
+            background-color: #1A3636;
+            margin-top: 10%;
+            height: 300px;
+            border-radius: 30px;
+            color: white;
+            
+        }
+        button{
+            width: 150px;
+            background-color:#677D6A;
+            height: 40px;
+            border-radius: 20px;
+            color: white;
+            
+        }
+        button:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+        #minu{
+            font-size: 30px;
+        }
+        #piyu{
+            height: 25px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="s1">Q2..Write a function that takes a string as input and returns the string reversed using a loop.
+    </h1>
+    <center>
+        <div>
+           
+            <br><br>
+       
+    <label for=""id="minu">Enter string :</label>
+    <input type="text" id="piyu">
+    <br><br><br><br>
+    <button onclick="data()">click</button>
+    <h4 id="text"></h4>
+</div>
+</center>
+
+    <script>
+        function data() {
+        let name = document.getElementById("piyu").value;
+        let str="";
+        for (x = name.length-1; x >= 0; x--) {
+          str += name[x];
+        }
+       document.getElementById("text").innerHTML=`ans=${str}`
+    }
+    </script>
+</body>
+</html>
